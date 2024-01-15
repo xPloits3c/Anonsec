@@ -13,7 +13,7 @@ white = "\033[1;97m"
 orange = "\033[1;31m"
 end = "\033[1;92m"
 
-design = f"                    {white}NOI {red}SIAMO {green}ANONYMOUS {end}"
+design = f"                    {white}DDOS {green}TOOL BY {red}xPloits3c {end}"
 print(f'''
 {green}
   █████╗ ███╗   ██╗ ██████╗ ███╗   ██╗███████╗███████╗ ██████╗
@@ -22,21 +22,20 @@ print(f'''
  ██╔══██║██║╚██╗██║██║   ██║██║╚██╗██║╚════██║██╔══╝  ██║       
  ██║  ██║██║ ╚████║╚██████╔╝██║ ╚████║███████║███████╗╚██████╗
  ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚══════╝ ╚═════╝ 
-                 -DDoS Tool by AnonSecIta
-
+             Un bug non è mai solo un errore.
     {design * 1}
 
 	''')  # The graphics are there
 
 
 useragents = requests.get(
-    "https://raw.githubusercontent.com/anovni/anonsec/main/useragents.txt").text.split("\n")
+    "https://raw.githubusercontent.com/xPloits3c/Anonsec/master/useragents.txt").text.split("\n")
 http_proxies = requests.get(
-    "https://raw.githubusercontent.com/anovni/ANONSEC/main/ProxyList.txt").text.split("\n")
+    "https://raw.githubusercontent.com/xPloits3c/Anonsec/master/ProxyList.txt").text.split("\n")
 socks4_proxy = requests.get(
-    "https://raw.githubusercontent.com/anovni/ANONSEC/main/Socks4.txt").text.split("\n")
+    "https://raw.githubusercontent.com/xPloits3c/Anonsec/master/Socks4.txt").text.split("\n")
 socks5_proxy = requests.get(
-    "https://raw.githubusercontent.com/anovni/ANONSEC/main/Socks5.txt").text.split("\n")
+    "https://raw.githubusercontent.com/xPloits3c/Anonsec/master/Socks5.txt").text.split("\n")
 
 
 def Main_Menu():  # in This Function Septum The Url To Make It Usable For The FutureSetting Of HttpRequests
