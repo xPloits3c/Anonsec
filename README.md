@@ -17,20 +17,21 @@ Un script semplice ma molto potente.
 - Python3
 
 # 🔧 Install Requirements
-Step 1. To check what version of Python is installed in your system:
+Step 1. Per verificare quale versione di Python è installata nel sistema:
 
       python3 --version
-Step 2. To install the latest version of Python, execute the following command:
+Step 2. Per installare l'ultima versione di Python, eseguire il seguente comando:
 
     sudo apt update
     sudo apt install python3
-Step 3. To install pip on Kali (the package installer for Python):
+Step 3. Per installare pip su Kali (il programma di installazione del pacchetto per Python):
 
     sudo apt install python3-pip
  
 # 💿 Install Anonsec 
     git clone https://github.com/xPloits3c/Anonsec.git
-   
+
+![anonsecincorso](https://github.com/xPloits3c/Anonsec/assets/153435050/5cab75a5-d8e3-4a2a-924a-2eff13183396)
 # 💻 Usage
     cd Anonsec
     python3 anonsec.py
