@@ -103,7 +103,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
                     type = int(input(f"{red}[+] {green}Scegli [0] per SOCKS4/5 o [1] per proxy > "))
                     if type == 0:
                         socks_mode = True
-                        sock_type = int(input(f"{red}[+] {green}Scegli [0] per SOCKS4 o [1] per SOCKS5 > "))
+                        sock_type = int(input(f"{red}[+] {green}Scegli [0] per SOCKS4 | [1] per SOCKS5 > "))
                         if sock_type == 0:
                             anonymity = socks4_proxy
                             break
