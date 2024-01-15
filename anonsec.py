@@ -61,16 +61,16 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
     try:
         while True:
             try:
-                choice = int(input(f"\n{green}Vuoi un obiettivo[0] o di più?[1] > {end}"))
+                choice = int(input(f"\n{green}[+] Un target[0] Di più[1] > {end}"))
             except ValueError:
                 print(f"{red}Usa solo numeri interi!{end}")
             if choice == 1:
-                ip_file = input(f"{green}Inserisci txt file se ips > {end}")
+                ip_file = input(f"{green}[+] Inserisci nome txt file > {end}")
                 ips = open(ip_file).readlines()
                 break
             elif choice == 0:
                 while True:             # Automatically detect whether input is IP or URL
-                    url = input(f"\n{green}Si prega di inserire URL Address: {end}").strip()
+                    url = input(f"\n{green}Inserisci URL Address: {end}").strip()
                     if re.match(URL_REGEX, url):
                         break
                     elif re.match(IP_REGEX, url):
@@ -87,12 +87,12 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
 
                 break # Gets out of Loop
             else:
-                print(f"{red}Opzioni non valide!{end}")
+                print(f"{red}!Opzioni non valide{end}")
     except KeyboardInterrupt:
-        print(f"{red}Gruppo di continuità tastiera rilevato, in uscita...{end}")
+        print(f"{red}!Gruppo di continuità tastiera rilevato, in uscita...{end}")
         exit()
     except Exception as e:  # If something goes wrong
-        print(f"{red}Errore: {e}{end}")
+        print(f"{red}!Errore: {e}{end}")
 
     while True:
         anonymous = input("\nSei sicuro di voler continuare? [y/n] > ").lower()
@@ -100,10 +100,10 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
             use_proxy = True
             try:
                 while True:
-                    type = int(input(f"{green}Scegli [0] per SOCKS4/5 o [1] per proxy > "))
+                    type = int(input(f"{green}[+] Scegli [0] per SOCKS4/5 o [1] per proxy > "))
                     if type == 0:
                         socks_mode = True
-                        sock_type = int(input(f"{green}Scegli [0] per SOCKS4 o [1] per SOCKS5 > "))
+                        sock_type = int(input(f"{green}[+] Scegli [0] per SOCKS4 o [1] per SOCKS5 > "))
                         if sock_type == 0:
                             anonymity = socks4_proxy
                             break
@@ -111,16 +111,16 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
                             anonymity = socks5_proxy
                             break
                         else:
-                            print(f"{red}Hai sbagliato, riprova.")
+                            print(f"{red}!Hai sbagliato, riprova.")
                     elif type == 1:
                         proxy_mode = True
                         anonymity = http_proxies
                         break
                     else:
-                        print(f"{red}Hai sbagliato, riprova.")
+                        print(f"{red}!Hai sbagliato, riprova.")
 
             except TypeError:
-                print(f"{red}Immettere solo numeri interi;") 
+                print(f"{red}!Immettere solo numeri interi;") 
             break
 
         elif choice == "n":
@@ -128,20 +128,20 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
             break
 
         else:
-            print("Sbagliato, riprovare.")
+            print("!Sbagliato, riprovare.")
 
     try:
-        threads = int(input("Inserisci i threads (800): "))
+        threads = int(input("[+] Inserisci i threads (800): "))
     except ValueError:
         threads = 800
         print("800 threads selected.\n")
 
     while True:
         try:
-            multiple = int(input(f"{green}Inserire un numero di moltiplicazione per l'attacco (1-5 = Normale) (50 = Di più!) (100 = Spacca culi!): {end}"))
+            multiple = int(input(f"{green}Inserire un numero di moltiplicazione (1-5 = Normale) (50 = Di più) (100 = X_X) > {end}"))
             break
         except ValueError:
-            print("Sbagliato, riprovare.\n")
+            print("!Sbagliato, riprovare.\n")
 
     try:
         input(f"{red}PREMERE UN TASTO QUALSIASI PER CONTINUARE O CTRL+C PER ANNULLARE > {end}")
