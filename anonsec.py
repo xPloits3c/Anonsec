@@ -65,7 +65,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
             except ValueError:
                 print(f"{red}Usa solo numeri interi!{end}")
             if choice == 1:
-                ip_file = input(f"{green}[+] Inserisci nome txt file > {end}")
+                ip_file = input(f"{green}[+] Inserisci nome .txt file > {end}")
                 ips = open(ip_file).readlines()
                 break
             elif choice == 0:
