@@ -95,7 +95,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
         print(f"{red}!Errore: {e}{end}")
 
     while True:
-        anonymous = input("\nSei sicuro di voler continuare? {red}[y/n] > ").lower()
+        anonymous = input("\nSei sicuro di voler continuare? [y/n] > ").lower()
         if anonymous == "y":
             use_proxy = True
             try:
@@ -131,7 +131,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
             print("!Sbagliato, riprovare.")
 
     try:
-        threads = int(input("{red}[+] {green}Inserisci i threads (800): "))
+        threads = int(input(f"{red}[+] {green}Inserisci i threads (800): "))
     except ValueError:
         threads = 800
         print("800 threads selected.\n")
