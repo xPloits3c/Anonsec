@@ -65,12 +65,12 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
             except ValueError:
                 print(f"{red}Usa solo numeri interi!{end}")
             if choice == 1:
-                ip_file = input(f"{green}[+] Inserisci nome .txt file > {end}")
+                ip_file = input(f"{red}[+] {green}Inserisci nome .txt file > {end}")
                 ips = open(ip_file).readlines()
                 break
             elif choice == 0:
                 while True:             # Automatically detect whether input is IP or URL
-                    url = input(f"\n{green}[+] Inserisci URL Address > {end}").strip()
+                    url = input(f"\n{red}[+] {green}Inserisci URL Address > {end}").strip()
                     if re.match(URL_REGEX, url):
                         break
                     elif re.match(IP_REGEX, url):
@@ -95,7 +95,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
         print(f"{red}!Errore: {e}{end}")
 
     while True:
-        anonymous = input("\nSei sicuro di voler continuare? [y/n] > ").lower()
+        anonymous = input("\nSei sicuro di voler continuare? {red}[y/n] > ").lower()
         if anonymous == "y":
             use_proxy = True
             try:
@@ -103,7 +103,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
                     type = int(input(f"{red}[+] {green}Scegli [0] per SOCKS4/5 o [1] per proxy > "))
                     if type == 0:
                         socks_mode = True
-                        sock_type = int(input(f"{green}[+] Scegli [0] per SOCKS4 o [1] per SOCKS5 > "))
+                        sock_type = int(input(f"{red}[+] {green}Scegli [0] per SOCKS4 o [1] per SOCKS5 > "))
                         if sock_type == 0:
                             anonymity = socks4_proxy
                             break
@@ -131,14 +131,14 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
             print("!Sbagliato, riprovare.")
 
     try:
-        threads = int(input("[+] Inserisci i threads (800): "))
+        threads = int(input("{red}[+] {green}Inserisci i threads (800): "))
     except ValueError:
         threads = 800
         print("800 threads selected.\n")
 
     while True:
         try:
-            multiple = int(input(f"{green}[+] Inserisci moltiplicatore |1-5 |50 |100 > {end}"))
+            multiple = int(input(f"{red}[+] {green}Inserisci moltiplicatore |1-5 |50 |100 > {end}"))
             break
         except ValueError:
             print("!Sbagliato, riprovare.\n")
