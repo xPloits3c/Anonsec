@@ -61,7 +61,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
     try:
         while True:
             try:
-                choice = int(input(f"\n{green}[+] Un target[0] Di più[1] > {end}"))
+                choice = int(input(f"\n{red}[+] {green}Un target[0] |Di più[1] > {end}"))
             except ValueError:
                 print(f"{red}Usa solo numeri interi!{end}")
             if choice == 1:
@@ -100,7 +100,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
             use_proxy = True
             try:
                 while True:
-                    type = int(input(f"{green}[+] Scegli [0] per SOCKS4/5 o [1] per proxy > "))
+                    type = int(input(f"{red}[+] {green}Scegli [0] per SOCKS4/5 o [1] per proxy > "))
                     if type == 0:
                         socks_mode = True
                         sock_type = int(input(f"{green}[+] Scegli [0] per SOCKS4 o [1] per SOCKS5 > "))
