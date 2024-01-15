@@ -89,7 +89,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
             else:
                 print(f"{red}!Opzioni non valide{end}")
     except KeyboardInterrupt:
-        print(f"{red}!Gruppo di continuità tastiera rilevato, in uscita...{end}")
+        print(f"{red}Ai potenti non piacciono le persone con le nostre capacità{end}")
         exit()
     except Exception as e:  # If something goes wrong
         print(f"{red}!Errore: {e}{end}")
