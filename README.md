@@ -8,8 +8,9 @@
 
  
 # 100% in Italiano
-Un script semplice ma molto potente.
- 
+- Un script semplice ma molto potente.
+- Proxy 2024
+  
 ![anonsec1 1menù](https://github.com/xPloits3c/Anonsec/assets/153435050/72b3d597-39ed-491d-a761-6c770ba3211c)
 
 
