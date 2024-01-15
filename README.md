@@ -10,7 +10,8 @@
 # 100% in Italiano
 Un script semplice ma molto potente.
  
-![anonsec1 1menù](https://github.com/xPloits3c/Anonsec/assets/153435050/9396b8c2-919a-4c16-b954-887776415ad0)
+![anonsec1 1menù](https://github.com/xPloits3c/Anonsec/assets/153435050/72b3d597-39ed-491d-a761-6c770ba3211c)
+
 
 # 🟢 Requirements
 - Python3
