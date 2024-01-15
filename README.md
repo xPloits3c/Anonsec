@@ -32,7 +32,7 @@ Step 3. Per installare pip su Kali (il programma di installazione del pacchetto 
 # 💿 Install Anonsec 
     git clone https://github.com/xPloits3c/Anonsec.git
 
-![anonsecincorso](https://github.com/xPloits3c/Anonsec/assets/153435050/5cab75a5-d8e3-4a2a-924a-2eff13183396)
+![anonsecincorso](https://github.com/xPloits3c/Anonsec/assets/153435050/b45a92e3-1bc5-4a8e-88cf-539ec3d12737)
 # 💻 Usage
     cd Anonsec
     python3 anonsec.py
