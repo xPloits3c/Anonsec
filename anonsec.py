@@ -22,7 +22,7 @@ print(f'''
  ██╔══██║██║╚██╗██║██║   ██║██║╚██╗██║╚════██║██╔══╝  ██║       
  ██║  ██║██║ ╚████║╚██████╔╝██║ ╚████║███████║███████╗╚██████╗
  ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚══════╝ ╚═════╝ 
-             Un bug non è mai solo un errore.
+                  Un bug non è mai solo un errore.
     {design * 1}
 
 	''')  # The graphics are there
@@ -70,7 +70,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
                 break
             elif choice == 0:
                 while True:             # Automatically detect whether input is IP or URL
-                    url = input(f"\n{green}Inserisci URL Address: {end}").strip()
+                    url = input(f"\n{green}[+] Inserisci URL Address > {end}").strip()
                     if re.match(URL_REGEX, url):
                         break
                     elif re.match(IP_REGEX, url):
@@ -138,7 +138,7 @@ def Main_Menu():  # in This Function Septum The Url To Make It Usable For The Fu
 
     while True:
         try:
-            multiple = int(input(f"{green}Inserire un numero di moltiplicazione (1-5 = Normale) (50 = Di più) (100 = X_X) > {end}"))
+            multiple = int(input(f"{green}[+] Inserisci moltiplicatore |1-5 |50 |100 > {end}"))
             break
         except ValueError:
             print("!Sbagliato, riprovare.\n")
